@@ -9,7 +9,6 @@ import java.util.Set;
 
 public interface BtcRepository extends CrudRepository<BTC, Long> {
 
+    // this method will query all the BTCs Between specific dates
     Set<BTC> getAllByDatetimeBetween(Date startDate, Date endDate);
-
-
 }

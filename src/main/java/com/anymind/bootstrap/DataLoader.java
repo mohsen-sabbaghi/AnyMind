@@ -40,18 +40,18 @@ public class DataLoader implements CommandLineRunner {
         btcRepository.save(btc01);
 
         BTC btc02 = new BTC();
-        btc02.setAmount(0.0005f);
-        btc02.setDatetime(new DateTime().toDate());
+        btc02.setAmount(0.005f);
+        btc02.setDatetime(new DateTime("2011-10-05T10:48:01+00:00").plusHours(2).toDate());
         btcRepository.save(btc02);
 
         BTC btc03 = new BTC();
         btc03.setAmount(0.03f);
-        btc03.setDatetime(new DateTime().plusHours(1).toDate());
+        btc03.setDatetime(new DateTime("2011-10-05T10:48:01+00:00").plusHours(2).toDate());
         btcRepository.save(btc03);
 
         BTC btc04 = new BTC();
         btc04.setAmount(20f);
-        btc04.setDatetime(new DateTime().plusHours(2).toDate());
+        btc04.setDatetime(new DateTime("2011-10-05T10:48:01+00:00").plusHours(2).toDate());
         btcRepository.save(btc04);
     }
 }
